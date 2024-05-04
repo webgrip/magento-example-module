@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="WebGrip_ExampleModule::examplemodule" title="Example Module" sortOrder="100">
+                    <resource id="WebGrip_ExampleModule::dashboard" title="Dashboard" sortOrder="10">
+                        <resource id="WebGrip_ExampleModule::index" title="Index" sortOrder="10"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

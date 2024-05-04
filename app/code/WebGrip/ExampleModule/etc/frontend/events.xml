@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_controller_category_init_after">
+        <observer name="webgrip_examplemodule_observer_whatever"
+                  instance="WebGrip\ExampleModule\Observer\WhateverObserver"
+        />
+    </event>
+</config>

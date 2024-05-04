@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd"
+>
+    <router id="standard"> <!-- standard is the default router, full list: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/routing.html -->
+        <route id="webgrip_example" frontName="webgrip"> <!-- id is the route id, frontName is the URL prefix -->
+            <module name="WebGrip_ExampleModule"/>
+        </route>
+        <route id="webgrip_magewire" frontName="webgrip-magewire"> <!-- id is the route id, frontName is the URL prefix -->
+            <module name="WebGrip_MageWire"/>
+        </route>
+    </router>
+</config>

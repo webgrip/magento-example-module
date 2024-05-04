@@ -1,0 +1,29 @@
+<?php
+declare(strict_types=1);
+
+/** @var \Magento\Framework\View\Element\Template $block */ // Block -> AbstractBlock -> __magic()
+
+/** @var \WebGrip\ExampleModule\Magewire\Dummy $magewire */
+$magewire = $block->getData('webgrip.examplemodule.magewire.dummy');
+
+/** @var \Magento\Catalog\Model\Product $product */
+//$product = $dummy->getProductById((int)$block->getData('product_id')); // Same as:
+$product = $magewire->getProductById((int)$block->getProductId());
+
+$upsellProducts = $product->getUpSellProductCollection()->getItems();
+
+?>
+<div>
+    <span><input type="text" wire:model.live="search"></span>
+    <span>Product name: </span><span><?= $product->getName() ?></span>
+
+    <div>Product ID: <?= $product->getId(); ?> </div>
+    <div>Upsellers: <?= count($upsellProducts); ?> </div>
+    <?php foreach ($upsellProducts as $upsellProduct): ?>
+        <div>
+            <span>Upsell product name: </span><span><?= $upsellProduct->getName() ?></span>
+            <span>Style bags: </span><span><?= $upsellProduct->getData('style_bags') ?></span>
+        </div>
+    <?php endforeach; ?>
+    Einde upsellers
+</div>

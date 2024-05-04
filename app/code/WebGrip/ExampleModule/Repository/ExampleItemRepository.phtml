@@ -1,0 +1,50 @@
+<?php
+
+namespace WebGrip\ExampleModule\Repository;
+
+use Magento\CatalogGraphQl\Model\Category\Filter\SearchCriteria;
+use Magento\Framework\Api\SearchCriteria\CollectionProcessorInterface;
+use Magento\Framework\Api\SearchResults;
+use WebGrip\ExampleModule\Model\ExampleItem;
+use WebGrip\ExampleModule\Model\ExampleItem\ExampleItemModelFactory;
+use WebGrip\ExampleModule\Model\ExampleItemCollectionFactory;
+use WebGrip\ExampleModule\Model\ExampleItemResourceModel;
+class ExampleItemRepository
+{
+
+        public function __construct(
+            private ExampleItemModelFactory $exampleItemModelFactory,
+            private ExampleItemCollectionFactory $exampleItemCollectionFactory,
+            private ExampleItemResourceModel $exampleItemResourceModel,
+//            private SearchCriteriaBuilder $searchCriteriaBuilder,
+            private CollectionProcessorInterface $collectionProcessor,
+            private SearchResultsFactory $searchResultsFactory
+        ) {
+
+        }
+
+    public function getById(int $id): ExampleItem
+    {
+        $model = $this->exampleItemModelFactory->create();
+        $this->exampleItemResourceModel->load($model, $id, 'id');
+        return $model;
+    }
+
+    public function save(ExampleItem $model): void
+    {
+        $this->exampleItemResourceModel->save($model);
+    }
+
+    public function getList(SearchCriteria $criteria): SearchResults
+    {
+        $collection = $this->exampleItemCollectionFactory->create();
+        $this->collectionProcessor->process($criteria, $collection);
+
+        $searchResults = $this->searchResultsFactory->create();
+        $searchResults->setSearchCriteria($criteria);
+        $searchResults->setItems($collection->getItems());
+        $searchResults->setTotalCount($collection->getSize());
+
+        return $searchResults;
+    }
+}

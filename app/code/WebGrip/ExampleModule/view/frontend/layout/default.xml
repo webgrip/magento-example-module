@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+>
+    <body>
+        <referenceBlock name="content">
+            <block name="webgrip.examplemodule.dummy"
+                template="WebGrip_ExampleModule::example.phtml"
+            >
+                <arguments>
+                    <argument name="dummy_view_model" xsi:type="object">WebGrip\ExampleModule\ViewModels\Dummy</argument>
+                    <argument name="product_id" xsi:type="number">43</argument>
+                </arguments>
+            </block>
+
+            <block name="webgrip.examplemodule.magewiredummy"
+                   template="WebGrip_ExampleModule::magewire.phtml"
+            >
+                <arguments>
+                    <argument name="magewire" xsi:type="object">WebGrip\ExampleModule\ViewModels\MagewireDummy</argument>
+                    <argument name="product_id" xsi:type="number">43</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

@@ -1,0 +1,8 @@
+{
+  "example_items": {
+    "column": {
+      "id": true,
+      "description": true
+    }
+  }
+}
