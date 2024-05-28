@@ -18,8 +18,8 @@
                    template="WebGrip_ExampleModule::magewire.phtml"
             >
                 <arguments>
-                    <argument name="magewire" xsi:type="object">WebGrip\ExampleModule\ViewModels\MagewireDummy</argument>
-                    <argument name="product_id" xsi:type="number">43</argument>
+                    <argument name="magewire" xsi:type="object">WebGrip\ExampleModule\Magewire\Dummy</argument>
+                    <argument name="product_id" xsi:type="number">44</argument>
                 </arguments>
             </block>
         </referenceBlock>
