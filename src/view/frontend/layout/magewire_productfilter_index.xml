@@ -6,25 +6,18 @@
     <body>
         <referenceContainer name="content">
             <container name="examples.wrapper" htmlClass="grid grid-cols-3 gap-8" htmlTag="div">
-                <block name="webgrip.examplemodule.magewire.viewmodel"
-                       template="WebGrip_ExampleModule::magewire/magewire/viewmodel.phtml"
-                >
+                <block name="product.filters" template="WebGrip_ExampleModule::magewire/products/filters.phtml">
                     <arguments>
-                        <argument name="dummy_view_model" xsi:type="object">
-                            WebGrip\ExampleModule\ViewModels\MagewireViewModel
+                        <argument name="magewire" xsi:type="object">
+                            \WebGrip\ExampleModule\Magewire\Filters
                         </argument>
-                        <argument name="product_id" xsi:type="number">43</argument>
                     </arguments>
                 </block>
-
-                <block name="webgrip.examplemodule.magewire.component"
-                       template="WebGrip_ExampleModule::magewire/magewire/component.phtml"
-                >
+                <block name="product.listing" template="WebGrip_ExampleModule::magewire/products/listing.phtml">
                     <arguments>
-                        <argument name="magewire" xsi:type="array">
-                            <item name="type" xsi:type="object">WebGrip\ExampleModule\Magewire\Component</item>
+                        <argument name="magewire" xsi:type="object">
+                            \WebGrip\ExampleModule\Magewire\ProductListing
                         </argument>
-                        <argument name="product_id" xsi:type="number">44</argument>
                     </arguments>
                 </block>
             </container>

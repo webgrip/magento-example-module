@@ -5,29 +5,7 @@
 >
     <body>
         <referenceContainer name="content">
-            <container name="examples.wrapper" htmlClass="grid grid-cols-3 gap-8" htmlTag="div">
-                <block name="webgrip.examplemodule.magewire.viewmodel"
-                       template="WebGrip_ExampleModule::magewire/magewire/viewmodel.phtml"
-                >
-                    <arguments>
-                        <argument name="dummy_view_model" xsi:type="object">
-                            WebGrip\ExampleModule\ViewModels\MagewireViewModel
-                        </argument>
-                        <argument name="product_id" xsi:type="number">43</argument>
-                    </arguments>
-                </block>
-
-                <block name="webgrip.examplemodule.magewire.component"
-                       template="WebGrip_ExampleModule::magewire/magewire/component.phtml"
-                >
-                    <arguments>
-                        <argument name="magewire" xsi:type="array">
-                            <item name="type" xsi:type="object">WebGrip\ExampleModule\Magewire\Component</item>
-                        </argument>
-                        <argument name="product_id" xsi:type="number">44</argument>
-                    </arguments>
-                </block>
-            </container>
+            <block name="index" template="WebGrip_ExampleModule::index.phtml" />
         </referenceContainer>
     </body>
 </page>

@@ -11,7 +11,9 @@
                 >
                     <arguments>
                         <argument name="magewire" xsi:type="array">
-                            <item name="type" xsi:type="object">WebGrip\ExampleModule\Magewire\Counter\Counter</item>
+                            <item name="type" xsi:type="object">
+                                \WebGrip\ExampleModule\Magewire\Counter\Counter
+                            </item>
                         </argument>
                     </arguments>
                 </block>
