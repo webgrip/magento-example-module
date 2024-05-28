@@ -5,14 +5,14 @@
 >
     <body>
         <referenceBlock name="content">
-<!--            <block name="webgrip.examplemodule.dummy"-->
-<!--                template="WebGrip_ExampleModule::example.phtml"-->
-<!--            >-->
-<!--                <arguments>-->
-<!--                    <argument name="dummy_view_model" xsi:type="object">WebGrip\ExampleModule\ViewModels\MagewireDummy</argument>-->
-<!--                    <argument name="product_id" xsi:type="number">43</argument>-->
-<!--                </arguments>-->
-<!--            </block>-->
+            <block name="webgrip.examplemodule.dummy"
+                template="WebGrip_ExampleModule::example.phtml"
+            >
+                <arguments>
+                    <argument name="dummy_view_model" xsi:type="object">WebGrip\ExampleModule\ViewModels\MagewireDummy</argument>
+                    <argument name="product_id" xsi:type="number">43</argument>
+                </arguments>
+            </block>
 
             <block name="webgrip.examplemodule.magewiredummy"
                    template="WebGrip_ExampleModule::magewire.phtml"
