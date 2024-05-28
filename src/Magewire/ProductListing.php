@@ -60,6 +60,5 @@ class ProductListing extends Component
         }
 
         $this->products = $collection->toArray();
-
     }
 }

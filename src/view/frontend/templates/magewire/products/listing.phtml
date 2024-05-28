@@ -2,24 +2,25 @@
 declare(strict_types=1);
 
 /** @var \Magento\Framework\View\Element\Template $block */
-/** @var \WebGrip\ExampleModule\Magewire\Component $magewire */
-?>
+/** @var \WebGrip\ExampleModule\Magewire\ProductListing $magewire */
 
-<?php $productCollection = $magewire->products; ?>
+$productCollection = $magewire->products;
+
+?>
 <div class="products wrapper grid products-grid" />
-<ol class="products list items product-items">
-    <?php foreach ($productCollection as $product): ?>
-        <li class="item product product-item">
-            <div class="product-item-info"
-                 id="product-item-info_<?= /* @noEscape */ $product['entity_id'] ?>"
-                 data-container="product-grid">
-                <div class="product details product-item-details">
-                    <strong>
-                        <?=/* @noEscape */ $block->stripTags($product['name'], null, true); ?>
-                    </strong>
+    <ol class="products list items product-items">
+        <?php foreach ($productCollection as $product): ?>
+            <li class="item product product-item">
+                <div class="product-item-info"
+                     id="product-item-info_<?= /* @noEscape */ $product['entity_id'] ?>"
+                     data-container="product-grid">
+                    <div class="product details product-item-details">
+                        <strong>
+                            <?=/* @noEscape */ $block->stripTags($product['name'], null, true); ?>
+                        </strong>
+                    </div>
                 </div>
-            </div>
-        </li>
-    <?php endforeach; ?>
-</ol>
+            </li>
+        <?php endforeach; ?>
+    </ol>
 </div>
