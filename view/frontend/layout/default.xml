@@ -10,7 +10,9 @@
                        template="WebGrip_ExampleModule::magewire/clicks.phtml"
                 >
                     <arguments>
-                        <argument name="magewire" xsi:type="object">WebGrip\ExampleModule\Magewire\Clicks\Clicks</argument>
+                        <argument name="magewire" xsi:type="array">
+                            <item name="type" xsi:type="object">WebGrip\ExampleModule\Magewire\Clicks\Clicks</item>
+                        </argument>
                     </arguments>
                 </block>
 
@@ -27,7 +29,9 @@
                        template="WebGrip_ExampleModule::magewire.phtml"
                 >
                     <arguments>
-                        <argument name="magewire" xsi:type="object">WebGrip\ExampleModule\Magewire\Dummy</argument>
+                        <argument name="magewire" xsi:type="array">
+                            <item name="type" xsi:type="object">WebGrip\ExampleModule\Magewire\Dummy</item>
+                        </argument>
                         <argument name="product_id" xsi:type="number">44</argument>
                     </arguments>
                 </block>
