@@ -36,13 +36,13 @@ class WebGripCommand extends Command
         $requiredProductId = (int)$input->getArgument('required_product_id');
 
         $requiredProduct = $this->productRepository->getById($requiredProductId);
-        $requiredProduct->setName('test');
+//        $requiredProduct->setName('test');
 
         $this->logger->debug('test');
 
-        if ($productId) {
-            $output->writeln('Product Name: ' . $this->productRepository->getById($productId)->getName());
-        }
+//        if ($productId) {
+//            $output->writeln('Product Name: ' . $this->productRepository->getById($productId)->getName());
+//        }
 
         $output->writeln('Required Product Name: ' . $this->productRepository->getById($requiredProductId)->getName());
 
