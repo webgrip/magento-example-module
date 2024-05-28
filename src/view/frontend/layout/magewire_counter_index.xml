@@ -7,7 +7,7 @@
         <referenceContainer name="content">
             <container name="examples.wrapper" htmlClass="grid grid-cols-3 gap-8" htmlTag="div">
                 <block name="webgrip.examplemodule.magewire.counter"
-                       template="WebGrip_ExampleModule::magewire/magewire/counter.phtml"
+                       template="WebGrip_ExampleModule::magewire/counter.phtml"
                 >
                     <arguments>
                         <argument name="magewire" xsi:type="array">
