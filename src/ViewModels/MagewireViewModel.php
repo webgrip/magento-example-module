@@ -8,7 +8,7 @@ use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
 
-class MagewireDummy implements ArgumentInterface
+class MagewireViewModel implements ArgumentInterface
 {
     public function __construct(private ProductRepositoryInterface $productRepository) {
     }

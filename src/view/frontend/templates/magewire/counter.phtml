@@ -7,10 +7,15 @@ $child = $block->getChildHtml($block->getNameInLayout())
 ?>
 <div>
     <button wire:click="increment">
-        Click here <?= $magewire->count ?>
+        + <?= $magewire->count ?>
     </button>
 
     <input type="number" wire:model.live="count"/>
+
+    <button wire:click="decrement">
+        - <?= $magewire->count ?>
+    </button>
+
     <?= $child ?>
 </div>
 

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-/** @var \WebGrip\ExampleModule\Block\Dummy $block */ // Block -> AbstractBlock -> __magic()
+/** @var \WebGrip\ExampleModule\Block\Dummy $block */
 
-/** @var \WebGrip\ExampleModule\ViewModels\MagewireDummy $dummy */
+/** @var \WebGrip\ExampleModule\ViewModels\MagewireViewModel $dummy */
 //$dummy = $block->getData('webgrip.examplemodule.dummy'); // Same as:
 $dummy = $block->getDummyViewModel();
 
@@ -13,8 +13,6 @@ $dummy = $block->getDummyViewModel();
 $product = $dummy->getProductById((int)$block->getProductId());
 
 $upsellProducts = $product->getUpSellProductCollection()->getItems();
-
-
 ?>
 <div>
     <span>Product name: </span><span><?= $product->getName() ?></span>

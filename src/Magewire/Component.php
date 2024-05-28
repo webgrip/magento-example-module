@@ -10,9 +10,8 @@ use Magento\Framework\Api\Search\FilterGroupBuilder;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 use Magento\Framework\Api\SortOrderBuilder;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
-use Magewirephp\Magewire\Component;
 
-class Dummy extends  Component
+class Component extends  \Magewirephp\Magewire\Component
 {
     public function __construct(
         private ProductRepositoryInterface $productRepository,
