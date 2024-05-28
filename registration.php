@@ -7,5 +7,5 @@ use Magento\Framework\Component\ComponentRegistrar;
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
     'WebGrip_ExampleModule',
-    __DIR__
+    __DIR__ . '/src'
 );
