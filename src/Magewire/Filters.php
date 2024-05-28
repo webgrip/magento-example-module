@@ -35,7 +35,7 @@ class Filters extends Component
     {
         $options[] = [
             'value' => '',
-            'label' => __('Plese choose a ' . $attributCode . '...')
+            'label' => __('Please choose a ' . $attributCode . '...')
         ];
         $optionValues = $this->attributeRepository->get($attributCode)->getOptions();
         array_shift($optionValues);
