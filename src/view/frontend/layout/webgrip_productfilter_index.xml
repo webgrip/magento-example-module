@@ -5,7 +5,7 @@
 >
     <body>
         <referenceContainer name="content">
-            <container name="examples.wrapper" htmlClass="grid grid-cols-3 gap-8" htmlTag="div">
+<!--            <container name="examples.wrapper" htmlClass="grid grid-cols-1 gap-8" htmlTag="div">-->
                 <block name="product.filters" template="WebGrip_ExampleModule::magewire/products/filters.phtml">
                     <arguments>
                         <argument name="magewire" xsi:type="object">
@@ -20,7 +20,7 @@
                         </argument>
                     </arguments>
                 </block>
-            </container>
+<!--            </container>-->
         </referenceContainer>
     </body>
 </page>
