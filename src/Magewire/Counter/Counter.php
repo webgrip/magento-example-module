@@ -1,10 +1,10 @@
 <?php
 
-namespace WebGrip\ExampleModule\Magewire\Clicks;
+namespace WebGrip\ExampleModule\Magewire\Counter;
 
 use Magewirephp\Magewire\Component;
 
-class Clicks extends Component
+class Counter extends Component
 {
     public int $count = 0;
 
