@@ -6,15 +6,15 @@ use Magewirephp\Magewire\Component;
 
 class Counter extends Component
 {
-    public int $count = 0;
+    public int $count = 100;
 
-    function increment(): void
+    public function increment()
     {
         $this->count++;
     }
 
-    function updatedCount(string $value)
+    public function decrement()
     {
-        $this->count = (int) $value++;
+        $this->count--;
     }
 }
