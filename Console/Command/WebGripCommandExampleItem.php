@@ -1,6 +1,6 @@
 <?php
 
-namespace WebGrip\ExampleModule\Console\Command;
+namespace Console\Command;
 
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Psr\Log\LoggerInterface;

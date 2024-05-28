@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace WebGrip\ExampleModule\Controller\Example;
+namespace Controller\Example;
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\Controller\Result\ForwardFactory;

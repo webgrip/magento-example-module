@@ -1,6 +1,6 @@
 <?php
 
-namespace WebGrip\ExampleModule\Plugins;
+namespace Plugins;
 
 use Magento\Catalog\Api\Data\ProductInterface;
 

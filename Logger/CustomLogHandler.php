@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace WebGrip\ExampleModule\Logger;
+namespace Logger;
 
 class CustomHandler extends \Monolog\Handler\AbstractProcessingHandler
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace WebGrip\ExampleModule\Model\ExampleItem;
+namespace Model\ExampleItem;
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 

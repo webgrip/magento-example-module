@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WebGrip\ExampleModule\Magewire;
+namespace Magewire;
 
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;

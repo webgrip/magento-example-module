@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace WebGrip\ExampleModule\Observer;
+namespace Observer;
 
 use Magento\Framework\Event\Observer;
 

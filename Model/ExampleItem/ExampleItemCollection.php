@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace WebGrip\ExampleModule\Model\ExampleItem;
+namespace Model\ExampleItem;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 use Model\ExampleItem\ExampleItem;
