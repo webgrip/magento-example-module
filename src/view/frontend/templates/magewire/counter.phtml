@@ -1,21 +1,5 @@
-<?php
-
-/** @var \Magento\Framework\View\Element\Template $block */
-/** @var \Magewirephp\MagewireExamples\Magewire\Three\Clicks $magewire */
-
-$child = $block->getChildHtml($block->getNameInLayout())
-?>
-<div>
-    <button wire:click="increment">
-        + <?= $magewire->count ?>
-    </button>
-
-    <input type="number" wire:model.live="count"/>
-
-    <button wire:click="decrement">
-        - <?= $magewire->count ?>
-    </button>
-
-    <?= $child ?>
+<div class="form-inline">
+    <button wire:click="increment">increment</button>
+    <input type="text" wire:model="count"/>
+    <button wire:click="decrement">decrement</button>
 </div>
-
