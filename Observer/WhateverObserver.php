@@ -3,8 +3,9 @@
 namespace  WebGrip\ExampleModule\Observer;
 
 use Magento\Framework\Event\Observer;
+use Magento\Framework\Event\ObserverInterface;
 
-class WhateverObserver
+class WhateverObserver implements ObserverInterface
 {
     public function __construct(private \Psr\Log\LoggerInterface $logger)
     {
