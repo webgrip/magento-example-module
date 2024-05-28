@@ -5,6 +5,15 @@ declare(strict_types=1);
 /** @var \WebGrip\ExampleModule\Magewire\Component $magewire */
 
 ?>
-<h2 class="page-title">Magewire Examples</h2>
+
+<h2 class="page-title">Magewire Examples (Normal links)</h2>
 <p><a href="<?= $block->getUrl('webgrip/counter') ?>">Counter</a></p>
 <p><a href="<?= $block->getUrl('webgrip/productfilter') ?>">Product Filter</a></p>
+
+
+<h2 class="page-title">Magewire Examples (Magewire redirect Components)</h2>
+<div class="form-inline">
+    <button wire:click="redirectToCounter">Counter</button>
+    <input type="text" wire:model.live="count"/>
+    <button wire:click="redirectToProductFilter">Product Filter</button>
+</div>
