@@ -1,0 +1,16 @@
+<?php
+
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Magewirephp\MagewireExamples\Magewire\Three\Clicks $magewire */
+
+$child = $block->getChildHtml($block->getNameInLayout())
+?>
+<div>
+    <button wire:click="increment">
+        Click here <?= $magewire->count ?>
+    </button>
+
+    <input type="number" wire:model.live="count"/>
+    <?= $child ?>
+</div>
+
