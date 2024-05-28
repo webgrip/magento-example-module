@@ -11,7 +11,9 @@ use Magento\Framework\Api\SearchCriteriaBuilder;
 use Magento\Framework\Api\SortOrderBuilder;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
 
-class Dummy implements ArgumentInterface
+use Magewirephp\Magewire\Component;
+
+class Dummy extends  Component
 {
     public function __construct(
         private ProductRepositoryInterface $productRepository,
