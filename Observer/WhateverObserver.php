@@ -14,6 +14,6 @@ class WhateverObserver implements ObserverInterface
     public function execute(Observer $observer)
     {
         $event = $observer->getEvent();
-        $this->logger->info($event->getName(), json_encode($event->getData()));
+        $this->logger->info($event->getName(), $event->getData());
     }
 }
