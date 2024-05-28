@@ -1,0 +1,20 @@
+{
+  "name": "webgrip/magento-example-module",
+  "version": "1.0.0",
+  "description": "Module where we showcase some of the best practices for Magento 2 development.",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*"
+  },
+  "license": [
+    "MIT"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "WebGrip\\ExampleModule\\": ""
+    }
+  }
+}
