@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace WebGrip\ExampleModule\Controller\Example;
+namespace WebGrip\ExampleModule\Controller\JsonExample;
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\Controller\Result\ForwardFactory;
@@ -18,16 +18,9 @@ class Index implements HttpGetActionInterface
 
     public function execute()
     {
-        $page = $this->pageFactory->create();
-//        $page = $this->jsonFactory->create();
-
+        $page = $this->jsonFactory->create();
         $page->getConfig()->getTitle()->set('WebGrip - V1');
 
-
-//        $page = $this->forwardFactory->create()
-//            ->setModule('webgrip_examplemodule')
-//            ->setController('example')
-//            ->forward('index');
 
         return $page;
     }
