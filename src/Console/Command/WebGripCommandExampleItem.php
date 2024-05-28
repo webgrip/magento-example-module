@@ -3,12 +3,12 @@
 namespace WebGrip\ExampleModule\Console\Command;
 
 use Magento\Catalog\Api\ProductRepositoryInterface;
+use Model\ExampleItem\ExampleItemResourceModel;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Model\ExampleItem\ExampleItemResourceModel;
 
 class WebGripCommandExampleItem extends Command
 {
