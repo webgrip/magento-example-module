@@ -6,8 +6,5 @@
         <route id="webgrip_example" frontName="webgrip"> <!-- id is the route id, frontName is the URL prefix -->
             <module name="WebGrip_ExampleModule"/>
         </route>
-        <route id="webgrip_magewire" frontName="webgrip-magewire"> <!-- id is the route id, frontName is the URL prefix -->
-            <module name="WebGrip_MageWire"/>
-        </route>
     </router>
 </config>
