@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Setup\Patch\Data;
+namespace WebGrip\ExampleModule\Setup\Patch\Data;
 
 use Magento\Eav\Setup\EavSetupFactory;
 use Magento\Framework\App\ResourceConnection;
