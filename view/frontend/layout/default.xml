@@ -9,7 +9,7 @@
                 template="WebGrip_ExampleModule::example.phtml"
             >
                 <arguments>
-                    <argument name="dummy_view_model" xsi:type="object">WebGrip\ExampleModule\ViewModels\Dummy</argument>
+                    <argument name="dummy_view_model" xsi:type="object">WebGrip\ExampleModule\ViewModels\MagewireDummy</argument>
                     <argument name="product_id" xsi:type="number">43</argument>
                 </arguments>
             </block>
