@@ -8,14 +8,8 @@ use Magento\Framework\View\Result\PageFactory;
 
 class Index implements ActionInterface
 {
-    private Context $context;
-
-    public function __construct(
-        Context $context,
-        PageFactory $pageFactory
-    ) {
-        $this->pageFactory = $pageFactory;
-        $this->context = $context;
+    public function __construct(private PageFactory $pageFactory)
+    {
     }
 
     public function execute()
