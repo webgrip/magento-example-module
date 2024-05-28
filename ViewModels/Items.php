@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ViewModels;
+namespace WebGrip\ExampleModule\ViewModels;
 
 use Magento\Framework\View\Element\Block\ArgumentInterface;
 use WebGrip\ExampleModule\ViewModels\ExampleItemCollectionFactory;
