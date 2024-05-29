@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+>
+    <body>
+        <referenceContainer name="content">
+            <container name="webgrip.examplemodule.events.wrapper" htmlClass="grid grid-cols-3 gap-8" htmlTag="div">
+
+                <block name="webgrip.examplemodule.events.emitter" template="WebGrip_ExampleModule::magewire/events/emitter.phtml">
+                    <arguments>
+                        <argument name="magewire" xsi:type="object">WebGrip\ExampleModule\Magewire\Events\EventEmitter</argument>
+                        <argument name="product_id" xsi:type="number">43</argument>
+                    </arguments>
+                </block>
+
+                <block name="webgrip.examplemodule.events.test2"  template="WebGrip_ExampleModule::magewire/events/listener.phtml">
+                    <arguments>
+                        <argument name="magewire" xsi:type="object">
+                            WebGrip\ExampleModule\Magewire\Events\EventListener
+                        </argument>
+                    </arguments>
+                </block>
+
+            </container>
+        </referenceContainer>
+    </body>
+</page>

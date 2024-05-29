@@ -6,8 +6,6 @@ use Magewirephp\Magewire\Component;
 
 class Index extends Component
 {
-    public int $count = 100;
-
     public function redirectToCounter()
     {
         $this->redirect('webgrip/counter');

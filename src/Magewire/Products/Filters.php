@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-namespace WebGrip\ExampleModule\Magewire;
+namespace WebGrip\ExampleModule\Magewire\Products;
 
-use Magewirephp\Magewire\Component;
 use Magento\Catalog\Model\Product\Attribute\Repository as AttributeRepository;
+use Magewirephp\Magewire\Component;
+use function WebGrip\ExampleModule\Magewire\__;
 
 class Filters extends Component
 {

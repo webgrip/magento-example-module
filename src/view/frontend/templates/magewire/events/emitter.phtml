@@ -1,0 +1,21 @@
+<?php
+declare(strict_types=1);
+
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \WebGrip\ExampleModule\Magewire\Products\ProductListing $magewire */
+
+?>
+<div>
+    <!-- Button to send a magewire event -->
+    <button wire:click="sendEvent">Emit event</button>
+    <!-- select from which to select the events that will be sent -->
+    <select wire:model="selectedEvent" wire:select.debounce.3000ms.blur>
+        <?php foreach($magewire->events as $event) : ?>
+            <option value="<?= $event['value'] ?>"><?= $event['label'] ?></option>
+        <?php endforeach ?>
+    </select>
+
+    <!-- text field from the which the event data will be taken -->
+    <input type="text" wire:model="eventData" wire:input.debounce.3000ms.blur/>
+
+</div>

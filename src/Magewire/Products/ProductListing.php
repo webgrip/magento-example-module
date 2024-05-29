@@ -1,9 +1,9 @@
 <?php
 
-namespace WebGrip\ExampleModule\Magewire;
+namespace WebGrip\ExampleModule\Magewire\Products;
 
-use Magewirephp\Magewire\Component;
 use Magento\Catalog\Model\ResourceModel\Product\CollectionFactory;
+use Magewirephp\Magewire\Component;
 
 class ProductListing extends Component
 {

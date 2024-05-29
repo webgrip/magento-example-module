@@ -1,6 +1,6 @@
 <?php
 
-namespace WebGrip\ExampleModule\Controller\ProductFilter;
+namespace WebGrip\ExampleModule\Controller\Products;
 
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\App\ActionInterface;

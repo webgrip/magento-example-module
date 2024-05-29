@@ -6,14 +6,14 @@
     <body>
         <referenceContainer name="content">
 <!--            <container name="examples.wrapper" htmlClass="grid grid-cols-1 gap-8" htmlTag="div">-->
-                <block name="product.filters" template="WebGrip_ExampleModule::magewire/products/filters.phtml">
+                <block name="webgrip.examplemodule.magewire.products.filters" template="WebGrip_ExampleModule::magewire/products/filters.phtml">
                     <arguments>
                         <argument name="magewire" xsi:type="object">
                             \WebGrip\ExampleModule\Magewire\Filters
                         </argument>
                     </arguments>
                 </block>
-                <block name="product.listing" template="WebGrip_ExampleModule::magewire/products/listing.phtml">
+                <block name="webgrip.examplemodule.magewire.products.listing" template="WebGrip_ExampleModule::magewire/products/listing.phtml">
                     <arguments>
                         <argument name="magewire" xsi:type="object">
                             \WebGrip\ExampleModule\Magewire\ProductListing

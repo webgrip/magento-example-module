@@ -1,0 +1,21 @@
+<?php
+declare(strict_types=1);
+
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \WebGrip\ExampleModule\Magewire\Products\ProductListing $magewire */
+
+$productCollection = $magewire->products;
+
+?>
+<div>
+    <!-- show all events that are being listened to and processed with a model -->
+    <h2>Events</h2>
+    <div wire:poll.5000ms>
+        <h2>Processed Events</h2>
+        <ul>
+            <?php foreach($magewire->processedEvents as $event) : ?>
+                <li><?= $event ?></li>
+            <?php endforeach ?>
+        </ul>
+    </div>
+</div>
