@@ -11,8 +11,8 @@ class Index extends Component
         $this->redirect('webgrip/counter');
     }
 
-    public function redirectToProductFilter()
+    public function redirectToProducts()
     {
-        $this->redirect('webgrip/productfilter');
+        $this->redirect('webgrip/products');
     }
 }
