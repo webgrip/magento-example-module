@@ -5,7 +5,7 @@
 >
     <body>
         <referenceContainer name="content">
-            <block name="index" template="WebGrip_ExampleModule::index.phtml">
+            <block name="index" template="WebGrip_ExampleModule::magewire/index.phtml">
                 <arguments>
                     <argument name="magewire" xsi:type="object">WebGrip\ExampleModule\Magewire\Index</argument>
                 </arguments>
